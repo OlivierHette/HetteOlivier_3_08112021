@@ -1,3 +1,7 @@
+/* Utils */
+@import "./utils/variables";
+@import "./utils/placeholders";
+
 /* Base */
 @import "./base/reset";
 @import "./base/typo";
@@ -15,7 +19,3 @@
 @import "./components/lists";
 @import "./components/cards";
 @import "./components/ico";
-
-/* Utils */
-@import "./utils/variables";
-@import "./utils/placeholders";

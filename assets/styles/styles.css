@@ -1,18 +1,280 @@
-/* Error: Undefined variable.
- *    ,
- * 29 |         color: $white;
- *    |                ^^^^^^
- *    '
- *   sass\base\_typo.scss 29:16  @import
- *   sass\main.scss 3:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 29 \2502          color: $white;\d\a    \2502                 ^^^^^^\a    \2575 \a   sass\\base\\_typo.scss 29:16  @import\a   sass\\main.scss 3:9          root stylesheet";
+/* Utils */
+.cards--news::before, .cards, .list--funct, .btn--cta {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+.btn--cta:hover, .logo--header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Base */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+h1, h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.txt--loc {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.txt--hero {
+  margin-bottom: 20px;
+}
+.txt--funct {
+  margin-left: 10px;
+}
+.txt--cards {
+  font-size: 14px;
+}
+.txt--footer {
+  color: #fff;
+}
+.txt--footer {
+  line-height: 25px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Layouts */
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.loc {
+  height: 40px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.container {
+  padding: 30px 20px;
+}
+.container__hero {
+  background-color: #f6f6f6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__funct {
+  display: flex;
+  flex-direction: column;
+}
+.container__restaurants {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: #353535;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+/* Components */
+.logo--header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1;
+}
+.logo--footer {
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 260px;
+}
+.box__list {
+  padding-left: 10px;
+}
+.box__cards {
+  padding: 0 10px;
+  row-gap: 20px;
+}
+
+.btn {
+  color: #fff;
+}
+.btn--cta {
+  display: flex;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  height: 50px;
+  min-width: 180px;
+  max-width: 200px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.btn--cta:hover {
+  opacity: 0.8;
+}
+
+.list--funct {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+.list--funct::before {
+  content: attr(data-count-circles);
+  margin-left: -30px;
+  margin-right: 15px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  background: #9356DC;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+}
+.list--funct:hover {
+  background: #f2eafb;
+}
+.list--funct:hover .fas {
+  color: #9356DC;
+}
+
+.cards {
+  min-width: 250px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.cards--news::before {
+  content: "Nouveau";
+  width: 70px;
+  height: 25px;
+  background: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  line-height: 25px;
+  margin: 10px 0 10px 170px;
+  border-radius: 3px;
+}
+.cards__img {
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cards__img img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.cards__body {
+  padding: 10px 10px;
+}
+
+.ico--hearts {
+  position: relative;
+  float: right;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.ico--hearts .fa-heart:hover {
+  background: #9356DC;
+  background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-utensils, .fa-hands-helping {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.fa-hands-helping {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
