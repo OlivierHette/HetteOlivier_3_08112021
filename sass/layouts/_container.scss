@@ -1,0 +1,21 @@
+.container {
+    padding: 30px 20px;
+    &__hero {
+        background-color: $lightenGray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__funct {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__restaurants {
+        background-color: $lightenGray;
+        display: flex;
+        flex-direction: column;
+    }
+}

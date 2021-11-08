@@ -1,0 +1,47 @@
+.cards {
+    min-width: 250px;
+    
+    margin: 0 auto;
+    background: $white;
+    @extend %shadow;
+    border-radius: 10px;
+
+    &--news::before {
+        content: "Nouveau";
+        width: 70px;
+        height: 25px;
+        background: $tertiary;
+        color: darken($tertiary, $amount: 40);
+        font-weight: bold;
+        @extend %shadow;
+
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        line-height: 25px;
+        //right: 40px;
+        margin: 10px 0 10px 170px;
+        border-radius: 3px;
+    }
+    
+    &__img {
+        height: 130px;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        & img {
+            width: 150%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+    }
+
+    &__body {
+        padding: 10px 10px;
+    }
+}

@@ -1,0 +1,27 @@
+.btn {
+    @if (lightness($primary) > 50% and lightness($secondary) > 50% and lightness($tertiary) > 50%) {
+        color: $white;
+    } @else {
+        color: $black;
+    }
+    
+    &--cta {
+        display: flex;
+        background-image: linear-gradient(170deg, $secondary, $primary);
+        height: 50px;
+        min-width: 180px;
+        max-width: 200px;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        @extend %shadow;
+        opacity: 1;
+        transition: opacity 400ms;
+
+        &:hover {
+            //background-image: linear-gradient(170deg, lighten($secondary, $amount: 5), lighten($primary, $amount: 5));
+            opacity: 0.8;
+            @extend %more-shadow;
+        } 
+    }
+}

@@ -1,0 +1,34 @@
+.list {
+    &--funct {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: $lightenGray;
+        border-radius: 10px;
+        padding: 0 20px;
+        margin: 10px 0;
+        @extend %shadow;
+
+        &::before {
+            content: attr(data-count-circles);
+            margin-left: -30px;
+            margin-right: 15px;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            background: $primary;
+            border-radius: 20px;
+            color: $white;
+            text-align: center;
+        }
+
+        &:hover {
+            background: lighten($primary, $amount: 35);
+            
+            & .fas {
+                color: $primary;
+            }
+        }
+    }
+}
