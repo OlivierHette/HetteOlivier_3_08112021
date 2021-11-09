@@ -1,11 +1,12 @@
 /* Utils */
+@import "./utils/function";
 @import "./utils/variables";
 @import "./utils/placeholders";
 
 /* Base */
 @import "./base/reset";
-@import "./base/typo";
 @import "./base/base";
+@import "./base/typo";
 
 /* Layouts */
 @import "./layouts/header";

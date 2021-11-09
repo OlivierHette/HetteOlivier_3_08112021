@@ -1,24 +1,24 @@
 .list {
     &--funct {
-        height: 50px;
+        height: rem-calc(50);
         width: 100%;
         display: flex;
         align-items: center;
         background: $lightenGray;
         border-radius: 10px;
-        padding: 0 20px;
-        margin: 10px 0;
+        padding: 0 rem-calc(20);
+        margin: rem-calc(10) 0;
         @extend %shadow;
 
         &::before {
             content: attr(data-count-circles);
-            margin-left: -30px;
-            margin-right: 15px;
-            height: 20px;
-            width: 20px;
-            line-height: 20px;
+            margin-left: rem-calc(-30);
+            margin-right: rem-calc(15);
+            height: rem-calc(18);
+            width: rem-calc(18);
+            line-height: rem-calc(18);
             background: $primary;
-            border-radius: 20px;
+            border-radius: rem-calc(18);
             color: $white;
             text-align: center;
         }

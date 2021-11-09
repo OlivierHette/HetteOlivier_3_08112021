@@ -1,5 +1,5 @@
 .container {
-    padding: 30px 20px;
+    padding: rem-calc(30) rem-calc(20);
     &__hero {
         background-color: $lightenGray;
         text-align: center;

@@ -4,35 +4,36 @@ h1, h4 {
 h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: rem-calc(16);
 }
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: $base-font-size;
 }
 
 .txt {
     &--loc {
-        margin-left: 10px;
-        font-size: 14px;
+        margin-left: rem-calc(10);
     }
     &--hero {
-        margin-bottom: 20px;
+        margin-bottom: rem-calc(20);
     }
     &--funct {
-        margin-left: 10px;
-    }
-    &--cards {
-        font-size: 14px;
+        margin-left: rem-calc(10);
     }
     &--footer {
         color: $white;
     }
     &--footer {
-        line-height: 25px;
+        line-height: rem-calc(25);
     }
 }
 
 .title {
-    margin-bottom: 20px;
+    margin-bottom: rem-calc(20);
+    
+    &--cards {
+        font-size: rem-calc(14);
+        margin-bottom: 0;
+    }
 }

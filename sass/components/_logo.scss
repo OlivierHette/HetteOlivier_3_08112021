@@ -5,11 +5,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
+        font-size: rem-calc(24);
         @extend %more-shadow;
         z-index: 1;
     }
     &--footer {
-        margin-bottom: 10px;
+        margin-bottom: rem-calc(10);
     }
 }
