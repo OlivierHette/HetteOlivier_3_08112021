@@ -2,7 +2,7 @@
 /* Utils */
 /* trim-unit : Fonction pour retirer l'unité de mesure */
 /* Fonction pour convertir les pixels en rem */
-.cards--news::before, .cards, .list--funct, .btn--cta {
+.cards__img--news::before, .cards, .list--funct, .btn--cta {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -219,24 +219,10 @@ footer {
 }
 
 .cards {
-  min-width: 16.0714285714rem;
+  min-width: 15.7142857143rem;
   margin: 0 auto;
   background: #fff;
   border-radius: 10px;
-}
-.cards--news::before {
-  content: "Nouveau";
-  width: 4.6428571429rem;
-  height: 1.4285714286rem;
-  background: #99E2D0;
-  color: #278870;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  text-align: center;
-  line-height: 1.4285714286rem;
-  margin: 0.7142857143rem 0 0.7142857143rem 10.7142857143rem;
-  border-radius: 3px;
 }
 .cards__img {
   height: 9.2857142857rem;
@@ -244,6 +230,20 @@ footer {
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.cards__img--news::before {
+  content: "Nouveau";
+  background: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  padding: 3px 5px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 1.4285714286rem;
+  top: 12px;
+  left: 10.7142857143rem;
+  border-radius: 3px;
 }
 .cards__img img {
   width: 150%;
@@ -269,6 +269,7 @@ footer {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .fa-utensils, .fa-hands-helping {

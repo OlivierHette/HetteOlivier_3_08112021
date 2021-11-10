@@ -8,8 +8,8 @@
 /* Fonction pour convertir les pixels en rem */
 @function rem-calc($value) {
     //@return $value / trim-unit($base-font-size) * 1rem;
-    /*@if ($value >= $base-font-size) {
+    @if ($value >= $base-font-size) {
         @return math.div($value, trim-unit($base-font-size)) * 1rem;
-    }*/
+    }
     @return math.div($value, trim-unit($base-font-size)) * 1rem;
 }

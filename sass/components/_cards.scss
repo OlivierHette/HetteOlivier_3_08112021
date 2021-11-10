@@ -1,28 +1,9 @@
 .cards {
-    min-width: rem-calc(225);
-    
+    min-width: rem-calc(220);
     margin: 0 auto;
     background: $white;
     @extend %shadow;
     border-radius: 10px;
-
-    &--news::before {
-        content: "Nouveau";
-        width: rem-calc(65);
-        height: rem-calc(20);
-        background: $tertiary;
-        color: darken($tertiary, $amount: 40);
-        font-weight: bold;
-        @extend %shadow;
-
-        position: absolute;
-        z-index: 1;
-        text-align: center;
-        line-height: rem-calc(20);
-        //right: 40px;
-        margin: rem-calc(10) 0 rem-calc(10) rem-calc(150);
-        border-radius: 3px;
-    }
     
     &__img {
         height: rem-calc(130);
@@ -30,6 +11,24 @@
         overflow: hidden;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+
+        &--news::before {
+            content: "Nouveau";
+            background: $tertiary;
+            color: darken($tertiary, $amount: 40);
+            font-weight: bold;
+            @extend %shadow;
+            padding: 3px 5px;
+    
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            line-height: rem-calc(20);
+            top: 12px;
+            left: rem-calc(150);
+            
+            border-radius: 3px;
+        }
 
         & img {
             width: 150%;
