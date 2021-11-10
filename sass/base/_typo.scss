@@ -31,9 +31,13 @@ body {
 
 .title {
     margin-bottom: rem-calc(20);
+    align-self: flex-start;
     
     &--cards {
         font-size: rem-calc(14);
         margin-bottom: 0;
+    }
+    &--hero {
+        align-self: center;
     }
 }

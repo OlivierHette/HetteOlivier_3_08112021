@@ -94,10 +94,14 @@ body {
 
 .title {
   margin-bottom: 1.4285714286rem;
+  align-self: flex-start;
 }
 .title--cards {
   font-size: 1rem;
   margin-bottom: 0;
+}
+.title--hero {
+  align-self: center;
 }
 
 /* Layouts */
@@ -117,23 +121,17 @@ header {
 }
 
 .container {
-  padding: 2.1428571429rem 1.4285714286rem;
-}
-.container__hero {
-  background-color: #f6f6f6;
-  text-align: center;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container__funct {
-  display: flex;
-  flex-direction: column;
+.container__hero {
+  background-color: #f6f6f6;
+  text-align: center;
 }
 .container__restaurants {
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
 }
 
 footer {
@@ -159,15 +157,12 @@ footer {
 .box {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  min-width: 16.4285714286rem;
 }
 .box__list {
-  padding-left: 0.7142857143rem;
+  padding-left: 10px;
 }
 .box__cards {
-  padding: 0 0.7142857143rem;
-  row-gap: 1.4285714286rem;
+  row-gap: 20px;
 }
 
 .btn {
@@ -190,14 +185,14 @@ footer {
 }
 
 .list--funct {
-  height: 3.5714285714rem;
-  width: 100%;
+  height: 60px;
+  min-width: 230px;
   display: flex;
   align-items: center;
   background: #f6f6f6;
   border-radius: 10px;
-  padding: 0 1.4285714286rem;
-  margin: 0.7142857143rem 0;
+  padding: 0 20px;
+  margin: 10px 0;
 }
 .list--funct::before {
   content: attr(data-count-circles);
@@ -219,13 +214,13 @@ footer {
 }
 
 .cards {
-  min-width: 15.7142857143rem;
+  min-width: 230px;
   margin: 0 auto;
   background: #fff;
   border-radius: 10px;
 }
 .cards__img {
-  height: 9.2857142857rem;
+  height: 130px;
   position: relative;
   overflow: hidden;
   border-top-left-radius: 10px;
@@ -241,8 +236,8 @@ footer {
   z-index: 1;
   text-align: center;
   line-height: 1.4285714286rem;
-  top: 12px;
-  left: 10.7142857143rem;
+  top: 10px;
+  left: 155px;
   border-radius: 3px;
 }
 .cards__img img {
@@ -254,7 +249,7 @@ footer {
   z-index: 0;
 }
 .cards__body {
-  padding: 0.7142857143rem 0.7142857143rem;
+  padding: 10px 10px;
 }
 
 .ico--hearts {

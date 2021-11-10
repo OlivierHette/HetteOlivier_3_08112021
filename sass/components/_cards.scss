@@ -1,12 +1,12 @@
 .cards {
-    min-width: rem-calc(220);
+    min-width: 230px;
     margin: 0 auto;
     background: $white;
     @extend %shadow;
     border-radius: 10px;
     
     &__img {
-        height: rem-calc(130);
+        height: 130px;
         position: relative;
         overflow: hidden;
         border-top-left-radius: 10px;
@@ -24,8 +24,8 @@
             z-index: 1;
             text-align: center;
             line-height: rem-calc(20);
-            top: 12px;
-            left: rem-calc(150);
+            top: 10px;
+            left: 155px;
             
             border-radius: 3px;
         }
@@ -41,6 +41,6 @@
     }
 
     &__body {
-        padding: rem-calc(10) rem-calc(10);
+        padding: 10px 10px;
     }
 }
