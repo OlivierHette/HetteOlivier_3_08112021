@@ -6,7 +6,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.btn--cta:hover, .logo--header {
+.btn--cta:hover, .container__header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -105,19 +105,17 @@ body {
 }
 
 /* Layouts */
-header {
+.header {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
 .loc {
   height: 40px;
-  background-color: #EAEAEA;
+  background: #EAEAEA;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
 }
 
 .container {
@@ -133,6 +131,13 @@ header {
 .container__restaurants {
   background-color: #f6f6f6;
 }
+.container__header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
 
 footer {
   background: #353535;
@@ -142,13 +147,18 @@ footer {
 
 /* Components */
 .logo--header {
-  height: 70px;
+  /*height: 70px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: rem-calc(24);
+  @extend %more-shadow;
+  z-index: 1;*/
   font-size: 1.7142857143rem;
-  z-index: 1;
+}
+.logo--header--menu {
+  align-self: center;
 }
 .logo--footer {
   margin-bottom: 0.7142857143rem;
@@ -215,7 +225,6 @@ footer {
 
 .cards {
   min-width: 230px;
-  margin: 0 auto;
   background: #fff;
   border-radius: 10px;
 }
@@ -253,7 +262,6 @@ footer {
 }
 
 .ico--hearts {
-  position: relative;
   float: right;
   font-size: 18px;
   margin-top: 10px;
@@ -265,6 +273,11 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+.ico--arrow {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
 }
 
 .fa-utensils, .fa-hands-helping {

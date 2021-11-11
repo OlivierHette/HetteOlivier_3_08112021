@@ -12,4 +12,13 @@
     &__restaurants {
         background-color: $lightenGray;
     }
+
+    &__header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %more-shadow;
+        z-index: 5;
+    }
 }

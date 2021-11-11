@@ -1,18 +1,21 @@
 .ico {
     &--hearts {
-        position: relative;
         float: right;
         font-size: 18px;
         margin-top: 10px;
-
         & .fa-heart:hover {
-            background: $primary;
-            background: linear-gradient(180deg, $primary 25%, $secondary 100%);
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+                background: $primary;
+                background: linear-gradient(180deg, $primary 25%, $secondary 100%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
         }
+    }
+    &--arrow {
+        position: absolute;
+        left: 0;
+        margin-left: 20px;
     }
 }
 

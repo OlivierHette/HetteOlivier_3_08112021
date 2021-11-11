@@ -1,13 +1,11 @@
-header {
+.header {
     background-color: $white;
-    display: flex;
-    flex-direction: column;    
 }
 .loc{
     height: 40px;
-    background-color: $darkGray;
+    background: $darkGray;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
 }
