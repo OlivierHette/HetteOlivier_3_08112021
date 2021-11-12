@@ -1,7 +1,4 @@
-h1, h4 {
-    font-family: 'Shrikhand', cursive;
-}
-h2, h3 {
+h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: rem-calc(16);
@@ -39,5 +36,8 @@ body {
     }
     &--hero {
         align-self: center;
+    }
+    &--menu {
+        margin-bottom: 0;
     }
 }

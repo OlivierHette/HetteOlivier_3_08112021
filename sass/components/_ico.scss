@@ -11,6 +11,12 @@
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
         }
+
+        &--menu {
+            float: none;
+            margin-top: 0;
+            flex: 1 0;
+        }
     }
     &--arrow {
         position: absolute;

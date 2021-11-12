@@ -21,4 +21,23 @@
         @extend %more-shadow;
         z-index: 5;
     }
+
+    &__menu-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        &--aLaFrancaise {
+            background-image: url('../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+        }
+    }
+
+    &__menu {
+        align-items: flex-start;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: -20px;
+        background-color: $white;
+    }
+
 }

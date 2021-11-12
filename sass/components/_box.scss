@@ -1,6 +1,6 @@
 .box {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
         
     &__list {
         padding-left: 10px;
@@ -8,5 +8,10 @@
 
     &__cards {
         row-gap: 20px;
+    }
+    &__header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }

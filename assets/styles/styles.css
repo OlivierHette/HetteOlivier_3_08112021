@@ -61,11 +61,7 @@ a {
   color: #000;
 }
 
-h1, h4 {
-  font-family: "Shrikhand", cursive;
-}
-
-h2, h3 {
+h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.1428571429rem;
@@ -103,6 +99,9 @@ body {
 .title--hero {
   align-self: center;
 }
+.title--menu {
+  margin-bottom: 0;
+}
 
 /* Layouts */
 .header {
@@ -138,6 +137,22 @@ body {
   justify-content: center;
   z-index: 5;
 }
+.container__menu-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.container__menu-img--aLaFrancaise {
+  background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.container__menu {
+  align-items: flex-start;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -20px;
+  background-color: #fff;
+}
 
 footer {
   background: #353535;
@@ -146,6 +161,9 @@ footer {
 }
 
 /* Components */
+.logo {
+  font-family: "Shrikhand", cursive;
+}
 .logo--header {
   /*height: 70px;
   width: 100%;
@@ -173,6 +191,11 @@ footer {
 }
 .box__cards {
   row-gap: 20px;
+}
+.box__header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn {
@@ -273,6 +296,11 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+.ico--hearts--menu {
+  float: none;
+  margin-top: 0;
+  flex: 1 0;
 }
 .ico--arrow {
   position: absolute;
