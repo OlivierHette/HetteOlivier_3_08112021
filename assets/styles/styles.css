@@ -101,6 +101,8 @@ body {
 }
 .title--menu {
   margin-bottom: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2857142857rem;
 }
 
 /* Layouts */
@@ -147,10 +149,12 @@ body {
   background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .container__menu {
+  justify-content: space-around;
   align-items: flex-start;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin-top: -20px;
+  gap: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: -25px;
   background-color: #fff;
 }
 
@@ -195,6 +199,7 @@ footer {
 .box__header {
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
 }
 
@@ -300,7 +305,6 @@ footer {
 .ico--hearts--menu {
   float: none;
   margin-top: 0;
-  flex: 1 0;
 }
 .ico--arrow {
   position: absolute;
