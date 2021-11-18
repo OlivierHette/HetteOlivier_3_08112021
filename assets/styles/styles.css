@@ -301,6 +301,9 @@ footer {
 .btn {
   color: #fff;
 }
+.btn__container {
+  align-self: center;
+}
 .btn--cta {
   display: flex;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);

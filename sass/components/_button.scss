@@ -4,6 +4,10 @@
     } @else {
         color: $black;
     }
+
+    &__container {
+        align-self: center;
+    }
     
     &--cta {
         display: flex;
