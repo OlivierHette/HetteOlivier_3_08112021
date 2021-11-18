@@ -24,6 +24,15 @@ body {
     &--footer {
         line-height: rem-calc(25);
     }
+
+    &--menu {
+        flex: 1 0;
+    }
+    &--price {
+        flex: 0 0;
+        align-self: flex-end;
+        padding-bottom: 10px;
+    }
 }
 
 .title {
@@ -40,6 +49,20 @@ body {
     &--menu {
         margin-bottom: 0;
         font-family: 'Shrikhand', cursive;
-        font-size: rem-calc(18);
+        font-size: rem-calc(20);
+    }
+    &--iMenu {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: rem-calc(14);
+
+        &::after {
+            content: "";
+            margin-top: 5px;
+            display: block;
+            height: 3px;
+            width: 35px;
+            background-color: $tertiary;
+        }
     }
 }

@@ -2,7 +2,7 @@
 /* Utils */
 /* trim-unit : Fonction pour retirer l'unité de mesure */
 /* Fonction pour convertir les pixels en rem */
-.cards__img--news::before, .cards, .list--funct, .btn--cta {
+.cards__img--news::before, .cards, .list, .btn--cta, .dish {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -87,6 +87,14 @@ body {
 .txt--footer {
   line-height: 1.7857142857rem;
 }
+.txt--menu {
+  flex: 1 0;
+}
+.txt--price {
+  flex: 0 0;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
 
 .title {
   margin-bottom: 1.4285714286rem;
@@ -102,7 +110,20 @@ body {
 .title--menu {
   margin-bottom: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 1.2857142857rem;
+  font-size: 1.4285714286rem;
+}
+.title--iMenu {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.title--iMenu::after {
+  content: "";
+  margin-top: 5px;
+  display: block;
+  height: 3px;
+  width: 35px;
+  background-color: #99E2D0;
 }
 
 /* Layouts */
@@ -155,7 +176,7 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   margin-top: -25px;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 footer {
@@ -203,6 +224,80 @@ footer {
   align-items: center;
 }
 
+.menu {
+  margin: auto;
+  width: 100%;
+}
+.menu__title {
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+.menu__title::after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 2px;
+  margin-top: 5px;
+  background: #99E2D0;
+}
+
+.dish {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.dish__title {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dish__caption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.dish__caption p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dish__caption--checkBox {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 15%;
+  height: 100%;
+  background-color: #99E2D0;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+.dish__caption--checkBox i {
+  transform: rotate(45deg);
+  margin: auto;
+  transition: transform 0.5s ease-in-out;
+}
+.dish:hover .dish__caption,
+.dish:hover .dish__title {
+  width: 85%;
+}
+.dish:hover .dish__caption--checkBox {
+  transform: translateX(0%);
+}
+.dish:hover .dish__caption--checkBox i {
+  transform: rotate(360deg);
+}
+
 .btn {
   color: #fff;
 }
@@ -222,13 +317,15 @@ footer {
   opacity: 0.8;
 }
 
+.list {
+  display: flex;
+  border-radius: 10px;
+}
 .list--funct {
   height: 60px;
   min-width: 230px;
-  display: flex;
   align-items: center;
   background: #f6f6f6;
-  border-radius: 10px;
   padding: 0 20px;
   margin: 10px 0;
 }

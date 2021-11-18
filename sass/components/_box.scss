@@ -16,3 +16,88 @@
         align-items: center;
     }
 }
+
+.menu {
+    margin: auto;
+    width: 100%;
+    &__title {
+        padding-bottom: 10px;
+        font-weight: lighter;
+  
+      &::after {
+        display: block;
+        content: "";
+        width: 40px;
+        height: 2px;
+        margin-top: 5px;
+        background: $tertiary;
+      }
+    }
+  }
+  
+  .dish {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 70px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    @extend %shadow;
+    cursor: pointer;
+
+    &__title {
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__caption {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+  
+      width: 100%;
+      transition: width 0.5s ease-in-out;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+      }
+
+      &--checkBox {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15%;
+        height: 100%;
+        background-color: $tertiary;
+        color: $white;
+        transform: translateX(
+          100%
+        ); // Décalage de la checkbox de 100% de sa largeur en mode hidden avec "overflow: hidden;" de .dish
+        transition: transform 0.5s ease-in-out;
+        i {
+          transform: rotate(45deg);
+          margin: auto;
+          transition: transform 0.5s ease-in-out;
+        }
+      }
+    }
+    &:hover {
+      .dish__caption,
+      .dish__title {
+        width: 85%;
+      }
+      .dish__caption--checkBox {
+        transform: translateX(0%);
+        i {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  
