@@ -10,6 +10,34 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* animation des menus qui apparaissent progressivement */
+@keyframes dishes {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* apparition progressive de plats avec assignation de leurs timings respectifs */
+.slide-in-bottom01 {
+  animation: dishes 1s ease 0.3s 1 normal both;
+}
+
+.slide-in-bottom02 {
+  animation: dishes 1s ease 0.5s 1 normal both;
+}
+
+.slide-in-bottom03 {
+  animation: dishes 1s ease 0.7s 1 normal both;
+}
+
+.slide-in-bottom04 {
+  animation: dishes 1s ease 0.9s 1 normal both;
+}
+
 /* Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -394,13 +422,15 @@ footer {
   font-size: 18px;
   margin-top: 10px;
 }
+.ico--hearts .fa-heart {
+  background-color: transparent;
+  transition: color 300ms ease-in;
+}
 .ico--hearts .fa-heart:hover {
-  background: #9356DC;
-  background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
+  color: transparent;
   font-weight: bold;
+  -webkit-background-clip: text;
 }
 .ico--hearts--menu {
   float: none;

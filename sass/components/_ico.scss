@@ -3,13 +3,25 @@
         float: right;
         font-size: 18px;
         margin-top: 10px;
+
+        & .fa-heart {
+            // font-weight: 100;
+
+            // // background: $black;
+            // background-image: linear-gradient(180deg, $black 25%, $black 100%);
+            // background-clip: border-box;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // transition: all .3s ease-in-out;
+            background-color: transparent;
+            transition: color 300ms ease-in;
+            
+        }
         & .fa-heart:hover {
-                background: $primary;
-                background: linear-gradient(180deg, $primary 25%, $secondary 100%);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(180deg, $primary 25%, $secondary 100%);
+                color: transparent;
                 font-weight: bold;
+                -webkit-background-clip: text;
         }
 
         &--menu {
