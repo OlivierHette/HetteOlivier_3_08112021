@@ -1,12 +1,12 @@
+@import "./base/reset";
+
 /* Utils */
 @import "./utils/function";
 @import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/animations";
-@import "./utils/responsive";
 
 /* Base */
-@import "./base/reset";
 @import "./base/base";
 @import "./base/typo";
 
@@ -22,3 +22,5 @@
 @import "./components/lists";
 @import "./components/cards";
 @import "./components/ico";
+
+@import "./utils/responsive";

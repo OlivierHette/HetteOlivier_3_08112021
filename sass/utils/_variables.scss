@@ -4,7 +4,6 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 
 /* Color annexe */
-
 $darkGray: #EAEAEA;
 $lightenGray: #f6f6f6;
 $white: #fff;
@@ -14,3 +13,6 @@ $black: #000;
 $base-font-size: 14px;
 
 /* breakpoint */
+$medium: 768px;
+
+$medium-up: "only screen and (min-width: #{$medium})";
