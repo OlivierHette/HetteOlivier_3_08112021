@@ -2,9 +2,26 @@
     .box {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
+
+        &__header {
+            justify-content: space-between;
+        }
+
         &__list {
             gap: 30px;
+        }
+    }
+
+    .container {
+        &__menu {
+            max-width: 900px;
+            margin: -90px auto 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        &__menu-img {
+            height: 360px;
         }
     }
 }

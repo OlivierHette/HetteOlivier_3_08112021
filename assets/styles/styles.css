@@ -507,10 +507,23 @@ footer {
   .box {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+  }
+  .box__header {
+    justify-content: space-between;
   }
   .box__list {
     gap: 30px;
+  }
+
+  .container__menu {
+    max-width: 900px;
+    margin: -90px auto 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .container__menu-img {
+    height: 360px;
   }
 }
 
