@@ -2,6 +2,10 @@
 /* Utils */
 /* trim-unit : Fonction pour retirer l'unité de mesure */
 /* Fonction pour convertir les pixels en rem */
+/* Charte color */
+/* Color annexe */
+/* font */
+/* breakpoint */
 .cards__img--news::before, .cards, .list, .btn--cta, .dish {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -38,6 +42,44 @@
   animation: dishes 1s ease 0.9s 1 normal both;
 }
 
+/* Loader */
+.loader {
+  perspective: 700px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  position: fixed;
+  z-index: 999;
+  animation: background 3s both;
+}
+.loader--items {
+  border: 16px solid #EAEAEA;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 /* Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
