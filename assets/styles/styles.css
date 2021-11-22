@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -45,8 +44,6 @@ td, th {
 }
 
 /* Utils */
-/* trim-unit : Fonction pour retirer l'unité de mesure */
-/* Fonction pour convertir les pixels en rem */
 /* Charte color */
 /* Color annexe */
 /* font */
@@ -134,7 +131,7 @@ a {
 h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.1428571429rem;
+  font-size: rem-calc(16);
 }
 
 body {
@@ -143,19 +140,19 @@ body {
 }
 
 .txt--loc {
-  margin-left: 0.7142857143rem;
+  margin-left: rem-calc(10);
 }
 .txt--hero {
-  margin-bottom: 1.4285714286rem;
+  margin-bottom: rem-calc(20);
 }
 .txt--funct {
-  margin-left: 0.7142857143rem;
+  margin-left: rem-calc(10);
 }
 .txt--footer {
   color: #fff;
 }
 .txt--footer {
-  line-height: 1.7857142857rem;
+  line-height: rem-calc(25);
 }
 .txt--menu {
   flex: 1 0;
@@ -167,11 +164,11 @@ body {
 }
 
 .title {
-  margin-bottom: 1.4285714286rem;
+  margin-bottom: rem-calc(20);
   align-self: flex-start;
 }
 .title--cards {
-  font-size: 1rem;
+  font-size: rem-calc(14);
   margin-bottom: 0;
 }
 .title--hero {
@@ -180,12 +177,12 @@ body {
 .title--menu {
   margin-bottom: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 1.4285714286rem;
+  font-size: rem-calc(20);
 }
 .title--iMenu {
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: rem-calc(14);
 }
 .title--iMenu::after {
   content: "";
@@ -261,7 +258,7 @@ body {
 footer {
   background: #353535;
   color: #fff;
-  padding: 1.4285714286rem 1.4285714286rem;
+  padding: 20px 20px;
 }
 
 /* Components */
@@ -277,13 +274,13 @@ footer {
   font-size: rem-calc(24);
   @extend %more-shadow;
   z-index: 1;*/
-  font-size: 1.7142857143rem;
+  font-size: rem-calc(24);
 }
 .logo--header--menu {
   align-self: center;
 }
 .logo--footer {
-  margin-bottom: 0.7142857143rem;
+  margin-bottom: rem-calc(10);
 }
 
 .box {
@@ -413,13 +410,13 @@ footer {
 }
 .list--funct::before {
   content: attr(data-count-circles);
-  margin-left: -2.1428571429rem;
-  margin-right: 1.0714285714rem;
-  height: 1.2857142857rem;
-  width: 1.2857142857rem;
-  line-height: 1.2857142857rem;
+  margin-left: rem-calc(-30);
+  margin-right: rem-calc(15);
+  height: rem-calc(18);
+  width: rem-calc(18);
+  line-height: rem-calc(18);
   background: #9356DC;
-  border-radius: 1.2857142857rem;
+  border-radius: rem-calc(18);
   color: #fff;
   text-align: center;
 }
@@ -451,7 +448,7 @@ footer {
   position: relative;
   z-index: 1;
   text-align: center;
-  line-height: 1.4285714286rem;
+  line-height: rem-calc(20);
   top: 10px;
   left: 155px;
   border-radius: 3px;
