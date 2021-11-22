@@ -1,7 +1,7 @@
 h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: rem-calc(16);
+    font-size: 16px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -10,19 +10,19 @@ body {
 
 .txt {
     &--loc {
-        margin-left: rem-calc(10);
+        margin-left: 10px;
     }
     &--hero {
-        margin-bottom: rem-calc(20);
+        margin-bottom: 20px;
     }
     &--funct {
-        margin-left: rem-calc(10);
+        margin-left: 10px;
     }
     &--footer {
         color: $white;
     }
     &--footer {
-        line-height: rem-calc(25);
+        line-height: 25px;
     }
 
     &--menu {
@@ -36,11 +36,11 @@ body {
 }
 
 .title {
-    margin-bottom: rem-calc(20);
+    margin-bottom: 20px;
     align-self: flex-start;
     
     &--cards {
-        font-size: rem-calc(14);
+        font-size: 14px;
         margin-bottom: 0;
     }
     &--hero {
@@ -49,12 +49,12 @@ body {
     &--menu {
         margin-bottom: 0;
         font-family: 'Shrikhand', cursive;
-        font-size: rem-calc(20);
+        font-size: 20px;
     }
     &--iMenu {
         text-transform: uppercase;
         font-weight: normal;
-        font-size: rem-calc(14);
+        font-size: 14px;
 
         &::after {
             content: "";

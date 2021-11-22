@@ -1,20 +1,12 @@
 .logo {
     font-family: 'Shrikhand', cursive;
     &--header {
-        /*height: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: rem-calc(24);
-        @extend %more-shadow;
-        z-index: 1;*/
-        font-size: rem-calc(24);
+        font-size: 24px;
         &--menu {
             align-self: center;
         }
     }
     &--footer {
-        margin-bottom: rem-calc(10);
+        margin-bottom: 10px;
     }
 }
