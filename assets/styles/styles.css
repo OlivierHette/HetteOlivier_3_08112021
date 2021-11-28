@@ -298,7 +298,7 @@ footer {
 }
 .menu__title {
   padding-bottom: 10px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 .menu__title::after {
   display: block;
@@ -464,7 +464,7 @@ footer {
 }
 .ico--hearts .fa-heart {
   background-color: transparent;
-  transition: color 300ms ease-in;
+  transition: color 500ms ease-in;
 }
 .ico--hearts .fa-heart:hover {
   background-image: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
